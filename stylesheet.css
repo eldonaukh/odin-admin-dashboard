@@ -167,14 +167,14 @@ body {
 .main-content {
   padding: 20px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 300px;
   grid-template-rows: 1rem 1fr 1rem 1fr;
   gap: 20px;
 }
 
 .main-content .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(autofill, minmax(0, 1fr));
   gap: 20px;
   grid-row: 2 / -1;
@@ -233,6 +233,10 @@ body {
   gap: 20px;
 }
 
+.news-item {
+  padding: 20px;
+}
+
 .news-item:not(:last-child) {
   border-bottom: solid 1px grey;
 }
@@ -245,7 +249,7 @@ body {
 
 .user {
   display: grid;
-  grid-template-columns: 100px 300px;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1.5fr;
   padding: 10px;
 }
