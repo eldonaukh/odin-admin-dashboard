@@ -67,13 +67,13 @@ body {
 }
 
 .top-bar {
-  padding: 30px 60px;
+  padding: 40px 60px;
   background-color: white;
   grid-row: 1 / 2;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 40px 40px;
-  gap: 20px;
+  gap: 30px;
 }
 
 .top-bar .search-bar {
@@ -111,7 +111,6 @@ body {
   padding: 10px;
   background-color: orange;
   border-radius: 50%;
-  /* margin-top: -15px; */
 }
 
 #profile-name {
@@ -242,4 +241,30 @@ body {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   gap: 20px;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 100px 300px;
+  grid-template-rows: 1fr 1.5fr;
+  padding: 10px;
+}
+
+.user img{
+  width: 50%;
+  grid-row: 1 / -1;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.user .username {
+  font-size: 1.2rem;
+  align-self: end;
+}
+
+.user .user-fullname {
+  grid-area: 2 / 2 / -1 / -1;
+  align-self: center;
 }
