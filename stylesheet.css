@@ -109,7 +109,7 @@ body {
 #profile-icon img {
   width: 50%;
   padding: 10px;
-  background-color: yellow;
+  background-color: orange;
   border-radius: 50%;
   /* margin-top: -15px; */
 }
@@ -130,7 +130,7 @@ body {
 .greeting img {
   width: 50%; 
   padding: 10px;
-  background-color: yellow;
+  background-color: orange;
   border-radius: 50%;
   margin-top: -10px;
 }
@@ -150,10 +150,10 @@ body {
 }
 
 .top-bar .actions {
-  grid-column: -4 / -1;
+  grid-column: -3 / -1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(3, 100px);
+  gap: 20px;
 }
 
 .top-bar .actions button {
@@ -161,6 +161,8 @@ body {
   padding: 5px;
   border-radius: 50px;
   border: none;
+  color: white;
+  font-weight: bold;
 }
 
 .main-content {
@@ -183,7 +185,7 @@ body {
   padding: 30px;
   background-color: white;
   border-radius: 10px;
-  border-left: 10px solid yellow;
+  border-left: 10px solid orange;
   box-shadow: 2px 2px 1px 1px #b2b2b2;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -200,6 +202,15 @@ body {
 
 .card .actions {
   grid-area: 3 / 2 / 4 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 20px;
+}
+
+.actions img {
+  width: 30px;
+  justify-self: center;
+  align-self: end;
 }
 
 .news,
